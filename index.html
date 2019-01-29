@@ -8,28 +8,79 @@
     <title>Address Book</title>
   </head>
   <body>
-    <h1>Address Book</h1>
-    <h2>Add a Contact:</h2>
-    <form id="new-contact">
-      <label for="new-first-name">First Name</label>
-      <input type="text" id="new-first-name">
-      <label for="new-last-name">Last Name</label>
-      <input type="text" id="new-last-name">
-      <label for="new-phone-number">Phone Number</label>
-      <input type="text" id="new-phone-number">
-      <button type="submit">Add</button>
-    </form>
-
-    <h2>Contacts:</h2>
-    <ul id="contacts">
-    </ul>
-
-    <div id="show-contact">
-      <p>First Name: <span class="first-name"></span></p>
-      <p>Last Name: <span class="last-name"></span></p>
-      <p>Phone Number: <span class="phone-number"></span></p>
-      <div id="buttons">
+    <div class="container">
+      <div class="row">
+        <h1>Address Book</h1>
+        <div class="col-md-6">
+          <h2>Add a Contact:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <input type="text" placeholder="First Name" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Last Name" id="new-last-name">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Phone Number" id="new-phone-number">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" id="new-email">
+            </div>
+            <div class="form-group" id="new-home-address">
+              <label for="home-address">Home Address</label>
+              <br>
+              <input type="text" placeholder="Street" id="new-home-street">
+              <br>
+              <input type="text" placeholder="City" id="new-home-city">
+              <br>
+              <input type="text" placeholder="State" id="new-home-state">
+              <br>
+              <input type="text" placeholder="Zip" id="new-home-zip">
+            </div>
+            <div class="form-group" id="new-work-address">
+              <label for="work-address">Work Address</label>
+              <br>
+              <input type="text" placeholder="Street" id="new-work-street">
+              <br>
+              <input type="text" placeholder="City" id="new-work-city">
+              <br>
+              <input type="text" placeholder="State" id="new-work-state">
+              <br>
+              <input type="text" placeholder="Zip" id="new-work-zip">
+            </div>
+            <button type="submit">Add</button>
+          </form>
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-contact">
+            <p>First Name: <span class="first-name"></span></p>
+            <p>Last Name: <span class="last-name"></span></p>
+            <p>Phone Number: <span class="phone-number"></span></p>
+            <p>Email: <span class="email"></span></p>
+            <p>Home Address:
+            <br>
+              <span class="home-street"></span>
+              <span class="home-city"></span>
+              <span class="home-state"></span>
+              <span class="home-zip"></span>
+            </p>
+            <p>Work Address:
+              <br>
+                <span class="work-street"></span>
+                <span class="work-city"></span>
+                <span class="work-state"></span>
+                <span class="work-zip"></span>
+            </p>
+            <div id="buttons">
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
+
   </body>
 </html>
