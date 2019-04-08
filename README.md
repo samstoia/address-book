@@ -3,7 +3,7 @@ App that simulates an address book for users to input names and contact info to 
 
 
 ## Setup/Installation Requirements
-using command line, clone github repo by typing: git clone https://github.com/samstoia/transportation
+using command line, clone github repo by typing: git clone https://github.com/samstoia/address-book
 find the file on your computer
 open the desired html file in your browser.
 ## Known Bugs
